@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #ffffe3; */
+    background-color: #fafaad;
+}
+
+/* Header Sections */
+
+.logo_img{
+    width: 300px;
+}
+.nav-links{
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    gap: 30px;
+     
+}
+.nav-links  a{
+    text-decoration: none;
+    color: purple; 
+}
+.nav-links  a:hover{
+    background-color:greenyellow;
+    border-radius: 30px;
+    padding: 15px 25px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3d8c7;
+    align-items: center;
+    
+
+}
+.header-button{
+    margin-right: 20px;
+}
+.head-btn{
+    border: none;
+    background: none;
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 15px 25px;
+}
+.head-btn a{
+    text-decoration: none;
+}
+
+
+/* Hero Sections */
+
+.hero{
+   min-height: 100vh;
+   background-image: url(/img/hero_bg_img.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.hero-text{
+    text-align: center;
+    
+}
+.hero-text h1 {
+    font-size: 52px;
+    color: purple;
+    margin: 15px 0;
+    margin-bottom: 25px;
+
+}
+.hero-text p{
+    font-size: 30px;
+    color: purple;
+    margin-bottom: 25px;
+}
+.hero a{
+    text-decoration: none;
+    font-size: 18px ;
+    margin: 15px 0;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 28px;
+    margin: 15px 0;
+
+
+}
+
+
+/* About SEction */
+
+.abt-img{
+    width: 350px;
+    border-radius: 20px;
+}
+.about {
+    padding: 60px 40px;
+    background-color: #ffffe3;
+}
+.about-container {
+    
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 50px;
+}
+.about-text h2 {
+    font-size: 36px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #c8a050;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+.why-us {
+    padding: 60px 40px;
+    background-color: #fafaad;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 36px;
+    color: purple;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: purple;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact */
+
+.forms {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fafaad;
+    padding: 60px 40px;
+}
+
+.form-content {
+    width: 500px;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 6px 1px rgba(0,0,0,0.3);
+}
+
+.form-content h2 {
+    font-size: 28px;
+    color: purple;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    font-size: 16px;        /* was 32px - too big! */
+}
+
+.form-value {
+    display: flex;
+    flex-direction: column; /* label on top, input below */
+    margin-bottom: 15px;
+}
+
+.form-value label {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border: 1px solid purple;  /* purple border when clicked */
+}
+
+textarea {
+    resize: none;              /* stops user from resizing */
+    rows: 5;
+}
+
+.btn-form {
+    font-size: 16px;
+    border: none;
+    background-color: purple;  /* was blue */
+    color: white;
+    border-radius: 30px;
+    padding: 12px 30px;
+    display: block;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background-color: #c8a050;  /* golden on hover */
+}
+
+/* ADDRESS SIDE */
+.address {
+    max-width: 350px;
+}
+
+.address-content h2 {
+    font-size: 26px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.address-content p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.address-content a {
+    color: purple;
+    text-decoration: none;
+}
+
+.list-add {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list-add p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+/* Time */
+
+/* ---- TIMING SECTION ---- */
+.timing {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffe3;
+}
+
+.timing h2 {
+    font-size: 36px;
+    color: purple;
+    margin-bottom: 40px;
+}
+
+.timing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.timing-card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.timing-card h3 {
+    font-size: 20px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.timing-card .days {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.timing-card .time {
+    font-size: 18px;
+    color: #c8a050;
+    font-weight: bold;
+}
+
+/* TABLE */
+.table-title {
+    margin-bottom: 20px;
+}
+
+.timing-table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.timing-table th {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.timing-table td {
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.timing-table tr:hover {
+    background-color: #fafaad;
+}
+
+.sunday td {
+    background-color: #fff3cd;
+    font-weight: bold;
+    color: purple;
+}
+
+.note {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+
